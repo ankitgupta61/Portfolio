@@ -43,7 +43,7 @@
 /* landing CSS */
 
 #landing{
-    background: url(/Portfolio/photos/background.jpg);
+    background: url(/photos/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100 vh;
@@ -115,7 +115,7 @@
 
 #careerSummary{
     height: 100vh;
-    background-image: url(/Portfolio/photos/Career\ background.jpg);
+    background-image: url(/photos/Career\ background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px 20px 100px;
