@@ -1,1 +1,291 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Montserrate', sans-serif;
+}
 
+/* header CSS */
+#header{
+    padding: 15px;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    opacity: 0.88;
+}
+/* New learning */
+#header h2{
+    cursor:default;  
+}
+#links{
+    margin-right: 20px;
+}
+
+#links ul li{
+    display: inline-block;
+}
+
+#links ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 0px solid white;
+    transition: border 150ms padding 150ms;
+}
+
+#links ul li a:hover{
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+}
+
+/* landing CSS */
+
+#landing{
+    background: url(/Portfolio/photos/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100 vh;
+    padding: 100px 20px;
+}
+.profcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    width: 70%;
+    padding: 50px 0px;
+    background-color: grey;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px black;
+}
+.profcard img{
+    height: 292px;
+    width: auto;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgb(46, 46, 46);
+}
+
+.info{
+    width: 60%;
+    padding-left: 10px;
+}
+.info p{
+    padding: 10px 0;
+    margin: 0px;
+}
+
+.socialLinks{
+    display: flex;
+    justify-content:flex-start;
+    font-size : 30px;
+}
+.socialMedia{
+    margin-bottom: 0px;
+}
+.link1{
+    margin-top: 0px;
+    margin-right: 10px;
+}
+.link2{
+    margin-top: 0 px;
+    margin-left: 10px;
+}
+.socialLinks a{
+    color: rgb(88, 180, 255);
+    transition: color 200ms;
+    
+}
+.socialLinks a:hover{
+    color:rebeccapurple;
+}
+.socialLinks a:active{
+    color: white;
+}
+
+.connect{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+#careerSummary{
+    height: 100vh;
+    background-image: url(/Portfolio/photos/Career\ background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 20px 100px;
+}
+.career{
+    margin: auto;
+    width: 70%;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 4px;
+}
+.career h3{
+    margin: 8px;
+    text-align: center;
+    border-bottom: solid 1px #dedede;
+    padding-bottom: 4px;
+
+}
+.content1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background-color: grey;
+    margin: 8px 0px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table, td, th{
+    border: 1px solid;
+}
+
+td,th{
+    text-align: center;
+}
+ul li{
+    text-decoration: none;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    padding-bottom: 50px;
+}
+
+.projects h1{
+    margin-bottom: 50px;
+    border-bottom: 2px solid black;
+    color: rebeccapurple;
+}
+
+.proj{
+    display: flex;
+    flex: wrap;
+    border: 4px double black;
+    margin: 40px 0px;
+    border-radius: 4px;
+}
+.projInfo h2{
+    margin-bottom: 4px;
+}
+.projInfo{
+    padding: 10px;
+    padding: 20px 0px 20px 10px
+    
+}
+.proj img{
+    width: 273;
+    height: 183px;
+}
+
+.academics{
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.academics h2{
+    color:rebeccapurple;
+    margin-bottom: 50px;
+    border-bottom: 2px solid black;
+}
+
+.contact{
+    width: auto;
+    height: auto;
+    background-color: rgb(78, 78, 78);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.contact h1{
+    color: rgb(88,180,255);
+    margin-bottom: 20px;
+}
+.contact form input, textarea{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    outline: none;
+}
+.contact button{
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 14pt;
+    cursor: pointer;
+    background-color: rgb(88,180,255);
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px black;
+    transition: box-shadow: 150ms, background-color: 150ms, color 150ms;
+}
+
+.contact button:active{
+    box-shadow: none;
+    background-color: rgb(74, 155, 221);
+    color: rgb(44,44,44);
+}
+
+
+
+
+
+@media only screen and (max-width: 730px){
+    #header h2, #links{
+        margin: auto;
+    }
+    .info h2{
+        display: none;
+    }
+    .profcard img{
+        height: 200px;
+    }
+    .info h4{
+        margin-top: 10px;
+    }
+    .connect{
+        display: block;
+    }
+    .proj{
+        display: block;
+    }
+
+}
+
+/* @media only screen and (max-width: 570px)
+{
+    #header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+} */
+
+/* @media only screen and (max-width: 480px){
+    #header h2{
+        margin:auto;
+    }
+    #links{
+        margin: auto;
+    }
+    #links ul li a:hover{
+        padding-bottom: 12px;
+    }
+} */
+    
